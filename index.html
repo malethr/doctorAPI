@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="build/js/vendor.min.js"></script>
@@ -9,14 +10,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="well" id="name-form">
-        <form id="user">
-          <div class="form-group">
-            <input id="user-input" type="text">
-            <button class="btn btn-primary" type="submit">Search</button>
-          </div>
-        </form>
-      </div>
+      <h1 id="find-doctor">Find Doctor...</h1>
+      <form id="user-form">
+        <div class="input-group">
+          <input class="form-control" id="user-input" type="text" placeholder="Enter condition or doctor's name">
+          <span class="input-group-btn "><button class="btn btn-info" type="submit">SEARCH</button></span>
+        </div>
+      </form>
       <div id="results">
       </div>
     </div>

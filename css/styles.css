@@ -1,0 +1,26 @@
+html{
+  background-image: url('../images/background.jpg');
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  background-color: inherit;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#user-form {
+  position: absolute;
+  top: 50%;
+  width: 35%
+}
+
+#find-doctor{
+  color: white;
+  font-size: 100px;
+  margin-top: 20%;
+}
