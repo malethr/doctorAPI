@@ -9,7 +9,7 @@ let displayData = function(response){
   console.log(response.meta.count);
   if(response.meta.count === 0){
     $('#find-doctor').show();
-    $('#user-form').show();
+    $('.user-form').show();
     $('#no-match').modal();
   }else {
     for(let index in data){
@@ -60,35 +60,29 @@ let displayData = function(response){
                                 <div class="col-md-2 col-center">
                                   <img src="${image}" alt="no photo available">
                                 </div>
-                                <div class="col-md-4 col-center">
-                                  <h4>Dr. ${firstName} ${lastName}, ${title}</h4>
+                                <div class="col-md-5 col-center">
+                                  <h4>${firstName} ${lastName}, ${title}</h4>
                                   <br><p>${street} <br> ${city}, ${state},  <br> ${zip}</p>
                                 </div>
-                                <div class="col-md-3 col-center">
-                                  <p><br><span class="glyphicon glyphicon-phone-alt"></span>   ${phoneNumber}<br><br>Accepts new patients: ${accepts}<br>${website}</p>
-                                </div>
-                                <div class="col-md-3 col-center">
-                                  <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" type="submit">MORE DETAILS</button>
+                                <div class="col-md-5 col-center">
+                                  <p><br>${phoneNumber}<br><br>Accepts new patients: ${accepts}<br>${website}</p>
                                 </div>
                               </div>`);
       index++;
     }
   }
-}
+};
 
 $(document).ready(function(){
   $("#results").hide();
   $("#errors").hide();
   $("#no-match").hide();
-  $("#user-form").submit(function(evt){
+  $("form").submit(function(evt){
     evt.preventDefault();
-    evt.stopImmediatePropagation();
-    evt.stopPropagation();
     let userInput = $("#user-input").val();
-    $("#user-form").hide();
     $("h1").hide();
+    $(".user-form").hide();
     $("#results").show();
-
     applicationModule.getData(userInput, displayData);
     $("#user-input").val("");
   });

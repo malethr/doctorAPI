@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-#user-form {
+.user-form {
   position: absolute;
   top: 50%;
   width: 45%;
