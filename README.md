@@ -12,15 +12,21 @@ _Ask user's input for their condition or doctor's name then program will display
 
 | Behavior      | Input | Output |
 | ------------- | ------------- | ------------- |
-| Program will ask for user's input for condition| cold  | September 8, 2010  |
+| Program will ask for display doctor specialist for user's input of condition| cold  | Melanie Plaut, MD, Brian Greenberg,MD  |
+| Program will ask for display doctor specialist for user's input of name| diane  | Diane Baker, MD, Diane Karl, MD DO  |
 
-
+* _Search by condition: cold_
+![image of searhing cold condition1](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/movie.png?raw=true "Adding movie"){:height="36px" width="36px"}
+![image of searhing cold condition2](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/movie.png?raw=true "Adding movie"){:height="36px" width="36px"}
+* _Search by name: diane_
+![image of searching diane name](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/no%20movie%20listed.png?raw=true "Retrieving movie not on the list"){:height="36px" width="36px"}
+![image of searching diane name2](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/no%20movie%20listed.png?raw=true "Retrieving movie not on the list"){:height="36px" width="36px"}
 ## Setup/Installation Requirements
 
 * _Clone this repository_
 * _For a mac, run the following command in your terminal:
 git clone (https://github.com/malethr/doctorAPI)_
-* _Run gulp serve._
+* _Run gulp build then gulp serve in terminal._
 
 ## Support and contact details
 
@@ -32,8 +38,11 @@ _Maria Thomas. Email: malethr@gmail.com_
 _JS_
 _Html_
 _CSS_
+_bootstrap_
+_ajax_
 _JSON_
 _Bower_
+_betterDoctorAPI_
 
 ### License
 

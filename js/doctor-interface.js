@@ -5,8 +5,6 @@ let applicationModule = new ApplicationModule();
 let displayData = function(response){
   let index = 0;
   let data = response.data;
-  console.log(data);
-  console.log(response.meta.count);
   if(response.meta.count === 0){
     $('#find-doctor').show();
     $('.user-form').show();

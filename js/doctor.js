@@ -6,7 +6,7 @@ let ApplicationModule = function() {
 
 ApplicationModule.prototype.getData = function(userInput,displayData){
   $.ajax({
-    url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${userInput}&location=or-portland&skip=0&limit=50&user_key=${apiKey}`,
+    url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${userInput}&location=or-portland&sort=best-match-asc&skip=0&limit=50&user_key=${apiKey}`,
     type: 'GET',
     data: {
       format: 'json'
