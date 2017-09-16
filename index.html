@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="build/js/vendor.min.js"></script>
@@ -10,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="find-doctor">Find Doctor ...</h1>
+      <h1 id="find-doctor">Find <span id="pdx">PDX</span>Doctor ...</h1>
       <form id="user-form">
         <div class="input-group">
           <input class="form-control input-lg" id="user-input" type="text" placeholder="Enter condition or doctor's name">
@@ -19,9 +20,7 @@
       </form>
       <div id="results"></div>
       <div id="errors"></div>
-      <div id="noMatch">
-
-      </div>
+      <div id="no-match"></div>
     </div>
   </body>
 </html>

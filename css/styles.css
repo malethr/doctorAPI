@@ -26,7 +26,7 @@ body {
 }
 
 #results {
-  top: 10%;
+  top: 15%;
   bottom:0;
   position:fixed;
   overflow-y:scroll;
@@ -34,6 +34,25 @@ body {
 }
 
 .well{
-  background-color: black;
+  opacity: 0.9;
+  background-color: #343b3b;
   color: white;
+}
+
+.row{
+  vertical-align: center;
+}
+
+.col-center{
+  display: inline-block;
+}
+
+.col-center button{
+  margin-top: 25%;
+  margin-left: 15%;
+  margin-bottom: 25%;
+}
+
+#pdx{
+  color:#5bc0de;
 }
