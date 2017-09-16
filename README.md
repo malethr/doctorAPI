@@ -17,7 +17,7 @@ _Ask user's input for their condition or doctor's name then program will display
 
 * _Search by condition: cold_
 ![image of searhing cold condition1](https://github.com/malethr/doctorAPI/blob/master/images/cold.png)
-![image of searhing cold condition2](https://github.com/malethr/doctorAPI/blob/master/images/coldresult.png")
+![image of searhing cold condition2](https://github.com/malethr/doctorAPI/blob/master/images/coldresult.png)
 * _Search by name: diane_
 ![image of searching diane name](https://github.com/malethr/doctorAPI/blob/master/images/diane.png)
 ![image of searching diane name2](https://github.com/malethr/doctorAPI/blob/master/images/dianeresult.png)
