@@ -24,3 +24,16 @@ body {
   font-size: 100px;
   margin-top: 20%;
 }
+
+#results {
+  top: 10%;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  width: 55%;
+}
+
+.well{
+  background-color: black;
+  color: white;
+}

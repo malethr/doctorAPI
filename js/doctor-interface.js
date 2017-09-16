@@ -5,6 +5,10 @@ let applicationModule = new ApplicationModule();
 let displayData = function(response){
   let index = 0;
   let data = response.data;
+  console.log(response.meta.count);
+  if(response.meta.count === 0){
+    $('#noMatch').text('sorry no match');
+  }else {
   for(let index in data){
     let firstName = data[index].profile.first_name;
     let lastName = data[index].profile.last_name;
@@ -37,9 +41,9 @@ let displayData = function(response){
       }
       phoneData= practiceData[practiceIndex].phones;
       for (let phoneIndex in phoneData){
-        let numberType = applicationModule.getDashed(phoneData[phoneIndex].type);
+        let numberType = phoneData[phoneIndex].type;
         if(numberType === "landline"){
-          phoneNumber = phoneData[phoneIndex].number;
+          phoneNumber = applicationModule.getDashed(phoneData[phoneIndex].number);
         } else {
           phoneNumber = "unavailable";
         }
@@ -47,8 +51,9 @@ let displayData = function(response){
       }
     }
 
-    $('#results').append(`<li>Dr. ${firstName} ${lastName} <br> ${street}<br> ${city}, ${state}, ${zip}<br> ${website}<br> ${phoneNumber} <br> ${accepts}`);
+    $('#results').append(`<div class="well"><p>Dr. ${firstName} ${lastName} <br> ${street}<br> ${city}, ${state}, ${zip}<br> ${website}<br> ${phoneNumber} <br> Accepts new patients: ${accepts}</p></div>`);
     index++;
+  }
   }
 }
 
