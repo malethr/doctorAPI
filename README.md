@@ -16,11 +16,11 @@ _Ask user's input for their condition or doctor's name then program will display
 | Program will ask for display doctor specialist for user's input of name| diane  | Diane Baker, MD, Diane Karl, MD DO  |
 
 * _Search by condition: cold_
-![image of searhing cold condition1](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/movie.png?raw=true "Adding movie"){:height="36px" width="36px"}
-![image of searhing cold condition2](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/movie.png?raw=true "Adding movie"){:height="36px" width="36px"}
+![image of searhing cold condition1](https://github.com/malethr/doctorAPI/blob/master/images/cold.png)
+![image of searhing cold condition2](https://github.com/malethr/doctorAPI/blob/master/images/coldresult.png")
 * _Search by name: diane_
-![image of searching diane name](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/no%20movie%20listed.png?raw=true "Retrieving movie not on the list"){:height="36px" width="36px"}
-![image of searching diane name2](https://github.com/malethr/moviesApi/blob/master/src/main/resources/images/no%20movie%20listed.png?raw=true "Retrieving movie not on the list"){:height="36px" width="36px"}
+![image of searching diane name](https://github.com/malethr/doctorAPI/blob/master/images/diane.png)
+![image of searching diane name2](https://github.com/malethr/doctorAPI/blob/master/images/dianeresult.png)
 ## Setup/Installation Requirements
 
 * _Clone this repository_
