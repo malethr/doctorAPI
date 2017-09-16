@@ -10,8 +10,11 @@
     <title>Find Doctor</title>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <a class="navbar-brand" href="index.html"><span class="pdx">Find PDXDoctor</span></a>
+    </nav>
     <div class="container">
-      <h1 id="find-doctor">Find <span id="pdx">PDX</span>Doctor ...</h1>
+      <h1 id="find-doctor">Find <span class="pdx">PDX</span>Doctor ...</h1>
       <form id="user-form">
         <div class="input-group">
           <input class="form-control input-lg" id="user-input" type="text" placeholder="Enter condition or doctor's name">
@@ -36,21 +39,19 @@
           </div>
         </div>
       </div>
-      <div id="">
-        <div id="no-match" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Sorry!</h4>
-              </div>
-              <div class="modal-body">
-                <p>No match found!</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+      <div id="no-match" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Sorry!</h4>
+            </div>
+            <div class="modal-body">
+              <p>No match found!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

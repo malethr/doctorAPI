@@ -53,6 +53,11 @@ body {
   margin-bottom: 25%;
 }
 
-#pdx{
+.pdx{
   color:#5bc0de;
+}
+
+.navbar{
+  background-color: #343b3b;
+  color: #5bc0de;
 }

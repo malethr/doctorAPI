@@ -19,6 +19,7 @@ ApplicationModule.prototype.getData = function(userInput,displayData){
       console.log("failure");
       $('#find-doctor').show();
       $('#user-form').show();
+      $("#navbar").hide();
       $('#errors').modal();
     }
   });
