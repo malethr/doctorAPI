@@ -17,8 +17,9 @@ ApplicationModule.prototype.getData = function(userInput,displayData){
     },
     error: function() {
       console.log("failure");
-      $('#errors').show();
-  //    $('#errors').text("There was an error processing your request. Please try again.");
+      $('#find-doctor').show();
+      $('#user-form').show();
+      $('#errors').modal();
     }
   });
 };

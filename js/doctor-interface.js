@@ -8,7 +8,9 @@ let displayData = function(response){
   console.log(data);
   console.log(response.meta.count);
   if(response.meta.count === 0){
-    $('#no-match').show();
+    $('#find-doctor').show();
+    $('#user-form').show();
+    $('#no-match').modal();
   }else {
     for(let index in data){
       let image = data[index].profile.image_url;
@@ -66,7 +68,7 @@ let displayData = function(response){
                                   <p><br><span class="glyphicon glyphicon-phone-alt"></span>   ${phoneNumber}<br><br>Accepts new patients: ${accepts}<br>${website}</p>
                                 </div>
                                 <div class="col-md-3 col-center">
-                                  <button class="btn btn-default btn-md" type="submit">MORE DETAILS</button>
+                                  <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" type="submit">MORE DETAILS</button>
                                 </div>
                               </div>`);
       index++;
@@ -88,5 +90,6 @@ $(document).ready(function(){
     $("#results").show();
 
     applicationModule.getData(userInput, displayData);
+    $("#user-input").val("");
   });
 });
